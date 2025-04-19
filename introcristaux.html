@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to liquid crystals - Thanos' concrete solution</title>
+  <link rel="stylesheet" href="blancos.css">
+  <link rel="icon" type="image/jpg" href="finalelogo.jpg" >
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+
+
+<body>
+
+  <nav class="nav-top">
+    <a href="index.html">Home</a>    
+    <a href="theproject.html">The project</a>
+    <a href="ourpartners.html">Our partners</a>
+    <a href="theteam.html">The team</a>
+    <a href="results.html">Results</a>
+  </nav>
+
+  <nav class="nav-bottom">
+    <a href="introbéton.html">Introduction to concrete</a>    
+    <a href="introcristaux.html">Introduction to liquid crystals</a>
+    <a href="dispositifcristaux.html">Our crack detection device</a>
+    <a href="strategieprevention.html">Concrete degradation prevention</a>
+  </nav>
+
+  <header>
+    <h1 style="margin-top: 4rem;">INTRODUCTION TO LIQUID CRYSTALS</h1>
+    <h3></h3>
+
+  </header>
+
+  <main>
+
+    <h3>What are liquid crystals ?</h3>
+    <hr style="margin-bottom: 2rem;"> 
+    <p>
+      Matter can be categorized into three states according to the arrangement of its molecules: solid, liquid and gaseous. 
+      This arrangement depends on the conditions to which matter is subjected, such as temperature and pressure. As their name is antithetical, liquid crystals represent a unique state of matter halfway between
+      crystalline solids and isotropic liquids. This is called the mesophase state.
+    </p>
+
+    <h3  style="margin-top: 6rem;">How are they organized at the molecular level?</h3>
+    <hr style="margin-bottom: 2rem;">   
+    <p>
+      Within this mesophase state, liquid crystals are distinguished into two categories: nematics and smectics. The
+      molecules inside a nematic liquid crystal are free to move like a liquid and orient themselves on average towards the same axis <span style="font-style: italic;">n</span>. This orientation is a <span style="font-style: italic;">long-distance order</span>. 
+      For smectic liquid crystals, the molecules are organized in layers
+      where they are all oriented in the same direction, either straight or diagonally. This molecular organization
+      makes nematic liquid crystals more fluid than smectics.
+    </p>
+    <div class="image-box">
+      <div class="image-item">
+        <img src="schema_nematique.png" alt="Image 1">
+        <h3>Nematic liquid crystals</h3>
+      </div>
+      <div class="image-item">
+        <img src="schema_smectique.png" alt="Image 2">
+        <h3>Smectic liquid crystals</h3>
+      </div>
+    </div>
+
+    <h3  style="margin-top: 6rem;">Cholesteric liquid crystals</h3>
+    <hr style="margin-bottom: 2rem;">   
+    <p>In our study, we will focus on a particular kind of nematic liquid crystals. Cholesteric liquid crystals (CLC) are chiral nematic liquid crystals. The word "chiral" here designates the helical molecular structure of the nematic liquid crystal.</p>
+    <img src="schema_chiralité.png" style="width: 60rem; margin-left: auto; margin-right: auto; text-align: center; display: block;">
+    <p style="text-align: center; font-weight: bold; font-size: 1.5rem;">Scheme of chirality in a CLC</p>
+  
+    <h3  style="margin-top: 6rem;">How does a CLC's color change ?</h3>
+    <hr style="margin-bottom: 2rem;"> 
+    <p>
+      In a cholesteric liquid crystal, the color we see is the result of a selective reflection of light by the layers of its helical structure. 
+      The distance between two layers is the helical pitch : the distance it takes for a molecule to rotate fully on itself. When two waves 
+      reflected by two layers of the crystal are overlapping, they must form a constructive interference in order to make the reflected color visible. 
+    </p>
+    <img src="schema_bragg diffraction.png" style="width: 30rem; margin-left: auto; margin-right: auto; text-align: center; display: block;">
+    <p style="text-align: center; font-weight: bold; font-size: 1.5rem;">Scheme of selective reflexion in a CLC explained by Bragg's law</p>
+    <p>
+      And in order to create a constructive interference, the path difference between the two waves must be a multiple of wavelenght. Otherwise, they would be destructive and we would not be able to see any color.
+      We can express the path difference by Bragg’s law, it takes into account the helical pitch, the refraction index of the crystal and the angle of incidence of the wave :
+    </p>
+    <p>
+      $$k\lambda = 2n d \sin \theta$$
+    </p>
+
+    <h3  style="margin-top: 6rem;">How can we apply it to save concrete buildings ?</h3>
+    <hr style="margin-bottom: 2rem;"> 
+    <p>
+      So, in order to change the color of a CLC we need to change its helical pitch. The helical pitch can vary because of the temperature and of course because of a mechanical deformation. Applying a CLC to a concrete infrastructure is an 
+      interesting way to detect cracks easily. 
+    </p>
+
+    <div class="container2">
+      <button class="round-button left-button" onclick="window.location.href='introbéton.html'">&#8592;</button>
+      <button class="round-button right-button" onclick="window.location.href='dispositifcristaux.html'">&#8594;</button>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <p>" Science without conscience is but ruin of the soul " - Rabelais</p>
+  </footer>
+  
+
+  <script src="script.js"></script> <!-- Si ton fichier est dans le dossier "js" -->
+</body>
+</html>

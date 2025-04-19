@@ -1,0 +1,297 @@
+/* Dégradé de fond subtil */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(360deg, #d2d2ca, #bfbfb3);
+    color: white;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    padding: 4rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+  
+header h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+
+}
+
+@keyframes glossyText {
+    0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+    100% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.7); }
+}
+
+/* Barre de navigation haute */
+.nav-top {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.8rem 0;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    transition: top 0.3s;
+    z-index: 1000;
+  }
+  
+  /* Barre de navigation juste en dessous (collée) */
+  .nav-bottom {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", Arial, sans-serif;
+    position: fixed;
+    top: 3.2rem; /* correspond à la hauteur totale de .nav-top */
+    width: 100%;
+    padding: 0.8rem 0;
+    background: rgba(25, 25, 25, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    z-index: 1000;
+    margin-top: -0.5rem;
+  }
+  
+  /* Liens des deux barres */
+  .nav-top a,
+  .nav-bottom a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+  }
+  
+  .nav-top a:hover,
+  .nav-bottom a:hover {
+    opacity: 0.7;
+  }
+  
+main {
+    padding: 2rem 6rem;
+    margin-top: -2rem; /* rapproche du header */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+}
+
+main p {
+    padding: 0rem;
+    border-radius: 1rem;
+    line-height: 2;
+    margin-top: 30px; /* 30px en haut */
+    margin-bottom: 30px; /* 30px en bas */
+    font-size: 2rem;
+}
+
+main h1 {
+    padding: 0rem;
+    border-radius: 1rem;
+    line-height: 2;
+    margin-top: 30px; /* 30px en haut */
+    margin-bottom: 30px; /* 15px en bas */
+}
+
+main h3 {
+    padding: 0rem;
+    border-radius: 1rem;
+    line-height: 2;
+    margin-top: 30px; /* 30px en haut */
+    margin-bottom: 30px; /* 15px en bas */
+}
+ 
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    margin-top: 5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 7rem 8rem;
+    background: linear-gradient(135deg, #3f024533, #ffffff22);
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid #ffffff44;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+  
+.btn:hover {
+    background: linear-gradient(70deg, #00551c55, #23b13d33);
+    box-shadow: 0 6px 24px rgba(255, 255, 255, 0.2);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; /* centré */
+    gap: 3rem; /* contrôle l'espacement entre les boutons */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 4rem 8rem;
+    background: linear-gradient(135deg, #3f024533, #ffffff22);
+    color: white;
+    font-size: 1.5rem;
+    max-width: 20%;
+    min-width: 20%;
+    border: 1px solid #ffffff44;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn2:hover {
+    background: linear-gradient(200deg, #00551c55, #23b13d33);
+    box-shadow: 0 6px 24px rgba(255, 255, 255, 0.2);
+}
+
+
+  
+.facts {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+
+.factext{
+    max-width: 500px;
+    min-width: 300px;
+    font-size: 2.5rem;
+    font-style: bold;
+}
+
+/* Conteneur de la boîte */
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* La boîte qui encadre le compteur */
+  .compteur-box {
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #d1d1d1;
+    width: 350px; /* Largeur fixe pour mieux centrer */
+    color: #3d0000;
+  }
+
+
+.container2 {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* La boîte qui encadre le compteur */
+  .compteur-box2 {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #b2b2b2;
+    width: 67rem; /* Largeur fixe pour mieux centrer */
+    color: #3d0000;
+  }
+
+  #compteur {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espacement entre le compteur et le titre */
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0; /* Enlever tout espace avant le titre */
+  }
+
+.problematique {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(120deg, #edff48, #dddddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+body h3{
+    font-size: 1.7rem;
+}
+
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem; /* espace entre les deux images */
+    text-align: center;
+    margin: 2rem auto;
+  }
+  
+  .image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-item img {
+    width: 20rem; /* tu peux ajuster la taille ici */
+    height: auto;
+    border-radius: 10px; /* optionnel : coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optionnel : ombre douce */
+  }
+
+
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 220px;
+    margin: 0 auto;
+  }
+
+  .round-button {
+    margin-top: 4rem;
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 5%;
+    border: 2px solid #4d4d4d;
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .round-button:hover {
+    transform: scale(1.05); /* Légère augmentation de taille au survol */
+  }
+
+.videochiante {
+  filter: brightness(10%); /* 100% = normal, moins = plus sombre */
+}

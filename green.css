@@ -1,0 +1,232 @@
+/* Dégradé de fond subtil */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(100deg, #015005, #000000);
+    color: white;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    padding: 4rem 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(120deg, #eef987, #dddddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+  
+header h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(120deg, #b2f4c4, #b7f8d2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: glossyText 2s infinite alternate ease-in-out;
+}
+
+@keyframes glossyText {
+    0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+    100% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.7); }
+}
+
+/* Barre de navigation flottante */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.8rem 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    transition: top 0.3s;
+    z-index: 1000; /* 👈 ajoute cette ligne */
+}
+
+nav.hidden {
+    transform: translateY(-100%); /* Cela déplace la barre de navigation hors de la vue */
+    transition: transform 0.3s ease; /* Pour ajouter une animation fluide */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+main {
+    padding: 2rem 6rem;
+    margin-top: -2rem; /* rapproche du header */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main p {
+    padding: 0rem;
+    border-radius: 1rem;
+    line-height: 2;
+    margin-top: 30px; /* 30px en haut */
+    margin-bottom: 30px; /* 15px en bas */
+}
+
+main h1 {
+    padding: 0rem;
+    border-radius: 1rem;
+    line-height: 2;
+    margin-top: 30px; /* 30px en haut */
+    margin-bottom: 30px; /* 15px en bas */
+}
+
+main h3 {
+    padding: 0rem;
+    border-radius: 1rem;
+    line-height: 2;
+    margin-top: 30px; /* 30px en haut */
+    margin-bottom: 30px; /* 15px en bas */
+}
+ 
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    margin-top: 5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 7rem 8rem;
+    background: linear-gradient(135deg, #3f024533, #ffffff22);
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid #ffffff44;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+  
+.btn:hover {
+    background: linear-gradient(70deg, #00551c55, #23b13d33);
+    box-shadow: 0 6px 24px rgba(255, 255, 255, 0.2);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; /* centré */
+    gap: 3rem; /* contrôle l'espacement entre les boutons */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 4rem 8rem;
+    background: linear-gradient(135deg, #3f024533, #ffffff22);
+    color: white;
+    font-size: 1.5rem;
+    max-width: 20%;
+    min-width: 20%;
+    border: 1px solid #ffffff44;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn2:hover {
+    background: linear-gradient(200deg, #00551c55, #23b13d33);
+    box-shadow: 0 6px 24px rgba(255, 255, 255, 0.2);
+}
+
+
+  
+.facts {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+
+.factext{
+    max-width: 500px;
+    min-width: 300px;
+    font-size: 2.5rem;
+    font-style: bold;
+}
+
+/* Conteneur de la boîte */
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* La boîte qui encadre le compteur */
+  .compteur-box {
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #d1d1d1;
+    width: 350px; /* Largeur fixe pour mieux centrer */
+    color: #3d0000;
+  }
+
+
+.container2 {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* La boîte qui encadre le compteur */
+  .compteur-box2 {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #b2b2b2;
+    width: 67rem; /* Largeur fixe pour mieux centrer */
+    color: #3d0000;
+  }
+
+  #compteur {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Espacement entre le compteur et le titre */
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0; /* Enlever tout espace avant le titre */
+  }
+
+.problematique {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(120deg, #edff48, #dddddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+
+

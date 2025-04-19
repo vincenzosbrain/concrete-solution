@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to concrete - Thanos' Concrete Solution</title>
+  <link rel="stylesheet" href="blancos.css">
+  <link rel="icon" type="image/jpg" href="finalelogo.jpg" >
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+
+
+<body>
+
+  <nav class="nav-top">
+    <a href="index.html">Home</a>    
+    <a href="theproject.html">The project</a>
+    <a href="ourpartners.html">Our partners</a>
+    <a href="theteam.html">The team</a>
+    <a href="results.html">Results</a>
+  </nav>
+
+  <nav class="nav-bottom">
+    <a href="introbéton.html">Introduction to concrete</a>    
+    <a href="introcristaux.html">Introduction to liquid crystals</a>
+    <a href="dispositifcristaux.html">Our crack detection device</a>
+    <a href="strategieprevention.html">Concrete degradation prevention</a>
+  </nav>
+
+  <header>
+    <h1 style="margin-top: 4rem;">INTRODUCTION TO CONCRETE</h1>
+    <h3></h3>
+
+  </header>
+
+  <main>
+
+    <h3>What is reinforced concrete ?</h3>
+    <hr style="margin-bottom: 2rem;"> 
+    <p>
+      Reinforced concrete is an assembly of concrete structured by steel bars. These two components of reinforced concrete have their interest and advantages.
+      Concrete is composed of cement, aggregates and water. Cement being a hydraulic binder, it hardens in contact with water in a process called hydration. It is assimilated to dicalcium silicate with the chemical formula <span style="font-style: italic; font-family:  'Times New Roman', Times, serif">Ca<sub>2</sub>SiO<sub>4</sub></span>.
+      We can therefore express the formation of concrete by the following chemical reaction :
+    </p>
+    <p>
+      $$2 Ca_{2}SiO_{4}(s) + 4 H_{2}O(l) \longrightarrow Ca_{3}Si_{2}O_{7}, 3H_{2}O(l) + Ca(OH)_{2}(s)$$
+    </p>
+    <p>The calcium hydroxide <span style="font-style: italic; font-family:  'Times New Roman', Times, serif">Ca(OH)<sub>2</sub> </span>produced is a strong base. It makes the concrete basic as its water's pH is between 12 and 14.   
+    </p>
+
+    <h3 style="margin-top: 6rem;">How is concrete aging ?</h3>
+    <hr style="margin-bottom: 2rem;"> 
+    <p>
+      Over time, concrete undergoes an aging process known as carbonation. Carbon dioxyde <span style="font-style: italic; font-family:  'Times New Roman', Times, serif">CO<sub>2</sub></span> present in the atmosphere diffuses in concrete throught its pores and gets dissolved because of the water.
+      During carbonatation, carbon dioxyde will dissolve calcium hydroxyde which we can write now : 
+    </p>
+    <p>$$Ca(OH)_{2}(s) \longrightarrow Ca^2+(aq) + 2HO^{-}(aq)$$</p>
+    <p>The phenomenon of carbonatation makes carbon dioxyde and calcium hydroxyde react to form calcium carbonate and water. The other chemical entities are spectator ions. Therefore the chemical equation of carbonatation is the following : </p>
+    <p>
+      $$Ca^2+(aq) + 2HO-(aq) + CO_{2}(aq) \longrightarrow CaCO_{3}(s) + H_{2}O(l)$$
+    </p>
+    <p>Carbonatation makes the concrete acidic.</p>
+
+    <h3 style="margin-top: 6rem;">How does the aging of concrete affect its properties ?</h3>
+    <hr style="margin-bottom: 2rem;"> 
+
+    <p>In order to evaluate the strenght of concrete, we used Young's modulus expressed by the formula above : </p>
+    <p>$$E = \frac{\sigma}{\varepsilon}$$</p>
+    <p>We acidified a block of concrete with hydrochloric acid to test its durability as well as a normal block of concrete.</p>
+    <section style="text-align: center; padding: 2rem;">
+    <h2 style="margin-bottom: 3rem;">Concrete Strenght Tests</h2>
+    
+      <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    
+        <div style="min-width: 30rem; max-width: 30rem;">
+          <video  class="myVideo" id="videochiante" width="300" muted autoplay loop playsinline style=" transform: (180deg);">
+            <source src="Basicconcrete.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p style="font-weight: bold; font-size: 1.5rem;">Basic concrete (young)</p>
+        </div>
+    
+        <div>
+          <video class="myVideo" width="300" muted autoplay loop playsinline>
+            <source src="Acidicconcrete.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p style="font-weight: bold; font-size: 1.5rem;">Acidic concrete (aged after our "carbonatation")</p>
+        </div>
+    
+      </div>
+    </section>  
+    <p>Our basic block of concrete had a Young's modulus of <span style="font-weight: bold;">24MPa</span> and our acidic block of concrete one of <span style="font-weight: bold;">19MPa</span>. Our hypothesis was confirmed, aged
+      concrete is less resistant of around <span style="font-weight: bold;">20%</span> than fresh concrete. The danger is real.
+    </p>
+
+    <div class="container2">
+      <button class="round-button left-button" onclick="window.location.href=''">&#8592;</button>
+      <button class="round-button right-button" onclick="window.location.href='introcristaux.html'">&#8594;</button>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <p>" Science without conscience is but ruin of the soul " - Rabelais</p>
+  </footer>
+  
+
+  <script src="script.js"></script> <!-- Si ton fichier est dans le dossier "js" -->
+</body>
+</html>
